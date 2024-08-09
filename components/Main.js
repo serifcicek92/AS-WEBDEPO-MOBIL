@@ -43,7 +43,7 @@ const Main = ({ navigation }) => {
       await setRedirectLink(_redirectlink);
 
       if (kullaniciSifre) {
-        kullaniciSifre = md5(kullaniciSifre.toUpperCase()); // Convert to uppercase
+        kullaniciSifre = md5(kullaniciSifre).toUpperCase(); // Convert to uppercase
       }
 
       if (!_redirect !== 'true' && kullaniciAdi) {
