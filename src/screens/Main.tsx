@@ -58,7 +58,7 @@ const Main: React.FC<Props> = ({ navigation }) => {
                     : null;
 
                 if (kullaniciSifre) {
-                    kullaniciSifre = md5(kullaniciSifre.toUpperCase());
+                    kullaniciSifre = md5(kullaniciSifre);
                 }
 
                 const _LOGINURL =
